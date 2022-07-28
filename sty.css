@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #4F79C9;
+}
+/* body::before{
+  content: '';
+  background: url('vid.mp4') no-repeat center center-cover;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+  opacity: 1;
+} */
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(139, 182, 173);
+    position: absolute;
+    width: 100%;
+  }
+  .topnav a{
+    color:black;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+   
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:rgb(139, 182, 173);
+    display: block;
+    position: absolute;
+    right: 0;
+  
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: hotpink;
+    color:wheat;
+    cursor: pointer;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+
+  .navbar{
+    display: flex;
+    background-color: rgb(62, 98, 216);
+    overflow: hidden;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
+}
+
+#logo img{
+  width: 3rem;
+  border-radius: 50%;
+  
+}
+#nav li{
+    display: inline-block;
+ 
+    padding:24px;
+   color:white;
+   font-size: 25px;
+   cursor: pointer;
+  
+}
+#nav li:hover{
+    color:burlywood;
+    cursor: pointer;
+}
+#vid{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+}
+#myVideo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.txtbox{
+  background: none;
+  width: 75%;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: white;
+  border: 1px red;
+  outline: none;
+}
+#btn1{
+ 
+  position: absolute;
+  top: 73%;
+  left: 18%;
+  height: 45px;
+  width: 72px;
+  background-color: rgb(31 49 84);
+  border-radius: 13px;
+  color: rgb(67 185 46);
+
+}
+#btn1:hover{
+ background-color: #04AA6D;
+ color:rgb(139, 182, 173);
+ cursor: pointer;
+}
+
