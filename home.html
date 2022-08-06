@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>Flight</title>
     <link rel="stylesheet" href="sty.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,27 +55,13 @@
   Find the flight you need in a go
 </div>
   <div class="container">
-    <input type="text" class="txtbox"  placeholder="Enter the Registration Number"/>
+    <input type="text" id="icoa" class="txtbox"  placeholder="Enter the Registration Number"/>
      <!-- <input type="button" name="btn" id="btn1" value="Sumbit"> -->
     
-    <button type="submit" id="btn1">Search</button>
+     <button type="submit" id="btn1" onclick="fetch_data()">Search</button>
+     <script src="request.js"></script> 
 
   </div>
-      
- 
-       
-    
-<!-- <div class="rev">
- <ul>
-  <li> <img src="review1.jpg" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quidem.</span>
-  </li>
-  <li> <img src="review2.jpg" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quidem.</span>
-  </li>
-  <li> <img src="review3.jpg" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quidem.</span>
-  </li>
- 
- </ul>
-</div> -->
   <footer>
     
   </footer>
