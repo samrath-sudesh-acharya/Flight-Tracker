@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="info_style.css">
 </head>
 <body>
-<div id = "info"></div>
+    <div id = "info"></div>
+    <script>
+    const data = JSON.parse(localStorage.getItem('flight-data'));
+    console.log(data[0]);
+    document.getElementById('info').innerHTML = data[0]['airline']['name']
+    </script>
 </body>
 </html>

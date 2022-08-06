@@ -3,15 +3,11 @@ function fetch_data(){
     console.log(icoa)
     fetch(`https://flight-tracker-api.herokuapp.com/demo/${icoa.toUpperCase()}`)
     .then(response => response.json())
-    .then(data => display(data))
+    .then(data => {
+        localStorage.setItem('flight-data', JSON.stringify(data));
+        window.location.href = "info.html";
+    })
     .catch(error=>{
         console.log('[ERROR] : ',error);
     })
-}
-
-function display(data){
-    window.location.href = "info.html";
-    console.log(data[0])
-    document.getElementById('info').innerHTML = data[0]['airline']['name']
-    // document.getElementById('airline_name').innerHTML = data[0]['airline']['name']
 }
