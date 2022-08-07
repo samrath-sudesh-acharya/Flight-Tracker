@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Page</title>
+    <link rel="stylesheet" href="info_style.css" />
+  </head>
+  <body>
+    <div id="con">
+    <!-- <div id="sec1"></div>
+    <div id="sec2">
+      <h1 id="s1"></h1>
+      <p id="s2"></p> -->
+      <ul>
+        <li id="sec1"><img src="https://assets.telegraphindia.com/telegraph/2020/Dec/1609428231_untitled-design-2020-12-31t201524-160.jpg" alt=""></li>
+        <li id="sec2"><h1 id="s1"></h1>
+        <p id="s2"></p>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="box">
+      <ul>
+        <li id="sec3"><p>a</p></li>
+        <li id="sec4"><p>b</p></li>
+        <li id="sec5"><p>c</p></li>
+      </ul>
+    </div>
+    <script>
+      const data = JSON.parse(localStorage.getItem("flight-data"));
+      console.log(data[0]);
+      
+      document.getElementById("s2").innerHTML = data[0]["airline"]["name"];
+      document.getElementById("s1").innerHTML = data[0]["flight"]["iata"];
+    </script>
+  </body>
+</html>
