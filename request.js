@@ -5,7 +5,7 @@ function fetch_data(){
     .then(response => response.json())
     .then(data => {
         localStorage.setItem('flight-data', JSON.stringify(data));
-        window.location.href = "info.html";
+        window.location.href = "next.html";
     })
     .catch(error=>{
         console.log('[ERROR] : ',error);

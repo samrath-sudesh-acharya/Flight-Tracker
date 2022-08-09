@@ -70,6 +70,9 @@ button:hover{
     background-color: white;
     opacity: 0.2;
 }
+input{
+    color: black;
+}
 
 /* footer{
     color: black;

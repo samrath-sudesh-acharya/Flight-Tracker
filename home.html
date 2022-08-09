@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0" />
     <title>Flight</title>
-    <link rel="stylesheet" href="sty.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sty.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/b9c48ea07e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
-    
     <header id="main">
-      
-      
-      <button onclick="toggle()"><span class="material-symbols-outlined" id="ham">
-        menu
+      <button onclick="toggle()">
+        <span class="material-symbols-outlined" id="ham"> menu </span>
+      </button>
+      <span class="micon">
+        <img src="download.png" />
       </span>
-    </button>
-    <span class="micon">
-      <img src="download.jpg" >
-    </span>
-    
-    <nav id="nav">
-      
+
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">FLIGHT</a></li>
+          <li><a href="comm.html">LOCATION</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">SUPPORT</a></li>
+        </ul>
+        <div class="in">
+          <input type="text" placeholder="Search" /><i id="search" class="fa-solid fa-magnifying-glass"></i>
+          <button></button>
+        </div>
+      </nav>
+    </header>
+    <aside id="sid">
       <ul>
-        <li><a href="index.html">FLIGHT</a> </li>
-        <li><a href="comm.html">LOCATION</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SUPPORT</a></li>
+        <li><a href="">FLIGHT</a></li>
+        <hr />
+        <li><a href="">LOCATION</a></li>
+        <hr />
+        <li><a href="about.html">ABOUT</a></li>
+        <hr />
+        
+        <li><a href="about.html">SUPPORT</a></li>
       </ul>
-      <div class="in">
-        <input type="text" placeholder="Search">
-        <button></button>
+    </aside>
+    <div id="text"><b><em>Find the flight you need in a go</em></b></div>
+   
+    <div class="container">
+      <input
+        type="text"
+        id="icoa"
+        class="txtbox"
+        placeholder="Enter the Registration Number"
+      />
+      <!-- <input type="button" name="btn" id="btn1" value="Sumbit"> -->
+
+      <button type="submit" id="btn1" onclick="fetch_data()">Search</button>
+    </div>
+    <footer class="site-footer">
+      <div class="col1">
+        <p class="copyright-text">
+          Copyright &copy; 2022 All Rights Reserved by
+          <a href="#">Flight Aware</a>.
+        </p>
       </div>
-      
-    </nav>
-    
-  </header>
-  <aside id="sid">
-    <ul>
-      <li><a href="index.html">FLIGHT</a></li>
-      <hr>
-      <li><a href="index.html">LOCATION</a></li>
-      <hr>
-      <li><a href="comm.html">ABOUT</a></li>
-      <hr>
-      <li><a href="">SUPPORT</a></li>
-    </ul>
-  </aside>
-  <div id="text">
-    Find the flight you need in a go
-  </div>
-  <div class="container">
-    <input type="text" id="icoa" class="txtbox"  placeholder="Enter the Registration Number"/>
-    <!-- <input type="button" name="btn" id="btn1" value="Sumbit"> -->
-    
-    <button type="submit" id="btn1" onclick="fetch_data()">Search</button>
-    
-  </div>
-  <footer>
-    
-  </footer>
-  
-  <script src="request.js" type="text/javascript"></script>
-</body>
+
+      <div class="col2">
+        <ul class="social-icons">
+          <li>
+            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+          </li>
+          <li>
+            <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="request.js" type="text/javascript"></script>
+  </body>
 </html>

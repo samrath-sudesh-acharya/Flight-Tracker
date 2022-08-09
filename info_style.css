@@ -1,11 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:ital@1&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Inter','san-serif';
 }
-
+  body{
+      
+        background-color:whitesmoke;
+}
+#s1{
+    color:#3B9AE1;
+    font-weight: bolder;
+} 
+h1{
+    color:#3120E0;
+    font-size: 2.3rem
+}
+h2{
+    color:#3B9AE1;
+}
+p{
+    color:black;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 #div1{
     background-color: #eaeaeac6;
     height: 250px;
@@ -29,3 +54,378 @@
     font-size:xx-large;
     font-weight: bolder;
 }
+
+/*Flight_Status*/
+#status{
+  position: absolute;
+  top: 25%;
+  left: 73%;
+
+
+
+}
+#status p{
+    font-size: 30px;
+    margin-top: 22px;
+ 
+
+}
+
+
+#con{
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+#con ul{
+   display: flex;
+   
+   
+    
+}
+ #sec1{
+   
+    
+    height: 286px;
+    
+    border-radius: 27px;
+    background-color:rgb(132, 123, 207);
+    
+    
+
+}
+#sec1 img{
+    height: 286px;
+    
+    border-radius: 20px;
+    opacity: 0.9;
+    
+}
+#sec2{
+    align-self: center;
+    margin-left: 6rem;
+    font-family: 'Nunito', sans-serif;
+
+
+
+} 
+
+#sec2 h1{
+    
+   
+    font-size: 60px;
+  
+   
+}
+#sec2 p{
+   
+    font-size: 30px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+   
+
+}
+#sec3 p{
+    font-size: 20px;
+    margin-top: 23px;
+  
+}
+#sec3{
+   position:absolute; 
+   top:70%;
+   left:9%;
+
+}
+
+#sec4{  
+  
+   position:absolute; 
+   top:70%;
+   left:25%;
+   margin-left:6rem;
+
+}
+#sec4 p{
+    font-size: 20px;
+    margin-top: 23px;
+  
+  
+}
+
+#sec5{
+   position:absolute; 
+   top:70%;
+   left:41%;
+   margin-left: 12rem;
+
+}
+#sec5 p{
+    font-size: 20px;
+    margin-top: 23px;
+ 
+}
+
+#sec6{
+   position:absolute; 
+   top:85%;
+   left:9%;
+
+}
+#sec6 p{
+    font-size: 20px;
+    margin-top: 23px;
+  
+}
+#sec7{
+    position:absolute; 
+    top:85%;
+    left:18%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec7 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #sec8{
+    position:absolute; 
+    top:85%;
+    left:41%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec8 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #sec9{
+    position:absolute; 
+    top:85%;
+    left:51%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec9 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #sec10{
+    position:absolute; 
+    top:85%;
+    left:61%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec10 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #sec11{
+    position:absolute; 
+    top:100%;
+    left:9%;
+  
+ 
+ }
+ #sec11 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+
+ #sec12{
+    position:absolute; 
+    top:100%;
+    left:18%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec12 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #sec13{
+    position:absolute; 
+    top:100%;
+    left:41%;
+    margin-left: 12.3rem;
+ 
+ }
+ #sec13 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+
+ #b1{
+    position: absolute;
+    top:61%;
+    left:9%;
+ }
+   
+
+ #hr1{
+    top:115%;
+    position: absolute;
+    color:rgb(207, 8, 8);
+    width:100%;
+ }
+ /*Departure*/
+
+ #b2{
+    position: absolute;
+    top:120%;
+    left:9%;
+ }
+ #d1{
+    position:absolute; 
+    top:129%;
+    left:9%;
+  
+ 
+ }
+ #d1 p{
+     font-size: 20px;
+     margin-top: 23px;
+ }
+ #d2{  
+  
+    position:absolute; 
+    top:129%;
+    left:25%;
+    margin-left:6rem;
+ 
+ }
+ #d2 p{
+    font-size: 20px;
+    margin-top: 23px;
+  
+  
+}
+
+#d3{
+   position:absolute; 
+   top:129%;
+   left:41%;
+   margin-left: 12rem;
+
+}
+#d3 p{
+    font-size: 20px;
+    margin-top: 23px;
+ 
+}
+
+
+#d4{
+    position:absolute; 
+    top:144%;
+    left:9%;
+ 
+ }
+ #d4 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #d5{
+     position:absolute; 
+     top:144%;
+     left:18%;
+     margin-left: 12.3rem;
+  
+  }
+  #d5 p{
+      font-size: 20px;
+      margin-top: 23px;
+    
+  }
+  #d6{
+     position:absolute; 
+     top:144%;
+     left:41%;
+     margin-left: 12.3rem;
+  
+  }
+  #d6 p{
+      font-size: 20px;
+      margin-top: 23px;
+    
+  }
+  #d7{
+     position:absolute; 
+     top:144%;
+     left:51%;
+     margin-left: 12.3rem;
+  
+  }
+  #d7 p{
+      font-size: 20px;
+      margin-top: 23px;
+    
+  }
+  #d8{
+     position:absolute; 
+     top:144%;
+     left:61%;
+     margin-left: 12.3rem;
+  
+  }
+  #d8 p{
+      font-size: 20px;
+      margin-top: 23px;
+    
+  }
+   
+  #d9{
+    position:absolute; 
+    top:159%;
+    left:9%;
+  
+ 
+ }
+ #d9 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+
+ #d10{
+    position:absolute; 
+    top:159%;
+    left:18%;
+    margin-left: 12.3rem;
+ 
+ }
+ #d10 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+ #d11{
+    position:absolute; 
+    top:159%;
+    left:41%;
+    margin-left: 12.3rem;
+ 
+ }
+ #d11 p{
+     font-size: 20px;
+     margin-top: 23px;
+   
+ }
+  #dep{
+    margin-bottom: 23px;
+  }
+
+
+ #was{
+    position:absolute;
+    top:215%;
+ }
+ 
