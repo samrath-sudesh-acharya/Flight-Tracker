@@ -5,6 +5,8 @@ function fetch_data(){
     .then(response => response.json())
     .then(data => {
         localStorage.setItem('flight-data', JSON.stringify(data));
+        fetch(`http://127.0.0.1:8000/map/${data[0]}`)
+        .then(response =>console.log(response))
         window.location.href = "next.html";
     })
     .catch(error=>{

@@ -26,14 +26,6 @@ a{
     left: 40px;
 }
 
-#img{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    color: red;
-    top: 0px;
-    left: 0px;
-}
 
 #flight_icao{
     font-size:xx-large;
