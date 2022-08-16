@@ -129,11 +129,17 @@
       </ul>
     </div>
   
-  <iframe src ="map.html" title="MAP" height="800px" width="1400px"style="margin: 50px;position: absolute;top: 80rem;right:2rem;"></iframe>
+  <iframe id="map" title="MAP" height="800px" width="1400px"style="margin: 50px;position: absolute;top: 80rem;right:2rem;"></iframe>
+    <script>
+      var departure = localStorage.getItem('departure');
+      var arrival = localStorage.getItem('arrival');
+      console.log(departure);
+      console.log(arrival);
+      document.getElementById('map').src = `http://127.0.0.1:8000/map/departure=${departure}&arrival=${arrival}`;
+    </script>
 
     <script>
       const data = JSON.parse(localStorage.getItem("flight-data"));
-      console.log(data[0]);
       document.getElementById("flight-image").src = data[0]['image']
       document.getElementById("s2").innerHTML = (data[0]["airline"]["name"])?data[0]["airline"]["name"]:"Null";
       document.getElementById("s1").innerHTML = (data[0]["flight"]["iata"])?data[0]["flight"]["iata"]:"Null";
