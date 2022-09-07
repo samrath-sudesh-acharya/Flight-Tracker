@@ -16,6 +16,13 @@ function fetch_data(){
     })
 }
 
+const but = document.getElementById("btn1");
+ser = document.getElementById("load");
+
+but.addEventListener("click", ()=>{
+    ser.style.display = "inline-block";
+
+});
 
 function insert_data(data){
     const user_id = localStorage.getItem('user_id');
@@ -57,7 +64,7 @@ function insert_data(data){
             "flight_date": data['flight_date'],
             "flight_status": data['flight_status']
     }
-    // console.table(JSON.stringify(json));
+    console.table(JSON.stringify(json));
     fetch("http://127.0.0.1:8000/data", {
                 method: "POST",
                 body: JSON.stringify(json),

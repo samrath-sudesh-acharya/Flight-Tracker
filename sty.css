@@ -10,6 +10,12 @@
 html{
   scroll-behavior: smooth;
 }
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
 li{
     list-style: none;
 }
